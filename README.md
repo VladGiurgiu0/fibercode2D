@@ -12,7 +12,7 @@ Procedure:
 
 Notes:
 Use the data in "example_data" folder for a processing example.
-Currently the code is written with "/" (macOS) for refering to folders, instead of "\" (Windows)
+Currently the code is written with "/" (forward slash - macOS) for refering to folders, instead of "\" (backward slash - Windows)
 
 
 Things to do:
