@@ -11,3 +11,7 @@ Procedure:
 5. Use fiber_statistics_v2.m to extract fiber computed quantities, e.g. fiber velocity, and flow quantities at the fiber location, e.g. flow velocity, from all the "loops" and save them in single matrices, one for every quantity.
 
 Use the data in "example_data" folder for a processing example.
+
+
+Things to do:
+1. Check in "fct_track_fibers.m" section "%% correct angles" if the logic of fixing the orientation angles works well for computing rotation rates. 
