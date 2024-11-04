@@ -10,9 +10,12 @@ Procedure:
 4. Use "main.m" to process the velocity fields. The "AFTER PIV: compute flow and quantities" section filters and interpolates the velocity fields and computes vorticity, shear rate, and swirling strength.
 5. (optional) Use "couple_fiber_flow.m" to extract fiber computed quantities, e.g. fiber velocity, and flow quantities at the fiber location, e.g. flow velocity, from all the "loops" and save them in single matrices, one for every quantity.
 
+Notes:
 Use the data in "example_data" folder for a processing example.
+Currently the code is written with "/" (macOS) for refering to folders, instead of "\" (Windows)
 
 
 Things to do:
 1. Check in "fct_track_fibers.m" section "%% correct angles" if the logic of fixing the orientation angles works well for computing rotation rates.
-2. Integrate "couple_fiber_flow.m" into the main code
+2. Integrate "couple_fiber_flow.m" into the main code.
+3. Make the code operating system agnostic by automatically handleing "/" and "\".
