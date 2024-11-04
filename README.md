@@ -1,2 +1,11 @@
 # fibercode2D
 Matlab codes to process 2D images containing tracers and fibers.
+
+For an example of use of this code see: https://doi.org/10.1016/j.ijmultiphaseflow.2024.105021
+
+Procedure:
+1. Acquire images of fibers and spherical tracers in a 2D-PIV configuration.
+2. Use main.m to discriminate the fibers from the tracers. The "compute" section saves images containing only fibers separetely from ones containing only tracers. Note: "loop" means a subfolder in the root_folder and main.m can be used to run the same operations over multiple subfolders in sequence and this is useful when multiple statistically independent sets ("loops") of time-resolved images have been acquired. 
+3. Use PaIRS (https://pairs.unina.it) to process the images containing only tracers and compute the PIV velocity fields.
+4. Use main.m to process the velocity fields. The "AFTER PIV: compute flow and quantities" section filters and interpolates the velocity fields and computes vorticity, shear rate, and swirling strength.
+5. Use fiber_statistics_v2.m 
